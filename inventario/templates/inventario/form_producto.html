@@ -1,0 +1,20 @@
+{% extends 'inventario/base.html' %}
+
+{% block contenido %}
+
+<form method="POST">
+
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <button type="submit"
+    class="btn btn-success">
+
+        Guardar
+
+    </button>
+
+</form>
+
+{% endblock %}
